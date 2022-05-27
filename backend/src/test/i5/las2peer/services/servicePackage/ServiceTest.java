@@ -54,19 +54,15 @@ public class $Resource_Name$Test {
 
 
   /**
-   *
    * Called before the tests start.
-   *
    * Sets up the node and initializes connector and users that can be used throughout the tests.
-   *
    * @throws Exception
-   *
    */
   @BeforeClass
   public static void startServer() throws Exception {
 
     // start node
-	node = new LocalNodeManager().newNode();
+  	node = new LocalNodeManager().newNode();
     testAgent = MockAgentFactory.getAdam();
     testAgent.unlock(testPass); // agent must be unlocked in order to be stored
     node.storeAgent(testAgent);
@@ -95,12 +91,9 @@ $Test_Methods$
 
 
   /**
-   *
    * Called after the tests have finished. Shuts down the server and prints out the connector log
    * file for reference.
-   *
    * @throws Exception
-   *
    */
   @AfterClass
   public static void shutDownServer() throws Exception {
