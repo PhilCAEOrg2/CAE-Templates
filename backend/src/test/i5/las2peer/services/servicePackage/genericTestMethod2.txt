@@ -1,0 +1,10 @@
+  /**
+   * 
+   * Second Test for the $HTTP_Method_Name$ method.
+   * 
+   */
+  @Test
+  public void test$HTTP_Method_Name$2() {
+    // test
+  }
+
