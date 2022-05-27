@@ -1,0 +1,8 @@
+try {
+  ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$", "");
+  -{assertTrue(true); // change here}-
+  System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
+} catch (Exception e) {
+  e.printStackTrace();
+  fail("Exception: " + e);
+}
