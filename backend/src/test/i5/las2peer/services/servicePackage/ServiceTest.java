@@ -11,6 +11,7 @@ import java.util.HashMap;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.Assert;
 
 import javax.ws.rs.core.MediaType;
 
