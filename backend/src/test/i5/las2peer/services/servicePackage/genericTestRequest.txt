@@ -1,3 +1,4 @@
+
 try {
   ClientResponse result = c.sendRequest("$HTTP_Method_Type$", mainPath + "/$HTTPMethod_Path$", "");
 $Request_Assertions$
