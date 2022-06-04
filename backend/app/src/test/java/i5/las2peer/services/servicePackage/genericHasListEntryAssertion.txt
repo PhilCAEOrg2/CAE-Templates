@@ -1,5 +1,0 @@
-boolean $Has_List_Entry_Flag_Name$ = false;
-for(Object listItem : $JSON_Array_Name$) {
-  $Loop_Content$
-}
-Assert.assertTrue($Has_List_Entry_Flag_Name$);
