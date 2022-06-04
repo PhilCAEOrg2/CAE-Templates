@@ -48,8 +48,13 @@ public class $Resource_Name$Test {
   private static WebConnector connector;
   private static ByteArrayOutputStream logStream;
 
-  private static UserAgentImpl testAgent;
-  private static final String testPass = "adamspass";
+  private static UserAgentImpl testAgentAdam;
+  private static UserAgentImpl testAgentAbel;
+  private static UserAgentImpl testAgentEve;
+
+  private static final String testPassAdam = "adamspass";
+  private static final String testPassAbel = "abelspass";
+  private static final String testPassEve = "evespass";
 
   // version does not matter in tests
   private static final ServiceNameVersion testTemplateService = new ServiceNameVersion($Resource_Name$.class.getCanonicalName(),"0.1");
@@ -67,9 +72,19 @@ public class $Resource_Name$Test {
 
     // start node
     node = new LocalNodeManager().newNode();
-    testAgent = MockAgentFactory.getAdam();
-    testAgent.unlock(testPass); // agent must be unlocked in order to be stored
-    node.storeAgent(testAgent);
+	 
+    testAgentAdam = MockAgentFactory.getAdam();
+    testAgentAdam.unlock(testPassAdam); // agent must be unlocked in order to be stored
+    node.storeAgent(testAgentAdam);
+
+    testAgentAbel = MockAgentFactory.getAbel();
+    testAgentAbel.unlock(testPassAbel);
+    node.storeAgent(testAgentAbel);
+
+    testAgentEve = MockAgentFactory.getEve();
+    testAgentEve.unlock(testPassEve);
+    node.storeAgent(testAgentEve);
+	  
     node.launch();
 
     ServiceAgentImpl testService = ServiceAgentImpl.createServiceAgent(testTemplateService, "a pass");
@@ -84,7 +99,6 @@ public class $Resource_Name$Test {
     connector.setLogStream(new PrintStream(logStream));
     connector.start(node);
     Thread.sleep(1000); // wait a second for the connector to become ready
-    testAgent = MockAgentFactory.getAdam();
     
     -{ }-
   }
