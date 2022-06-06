@@ -4,7 +4,7 @@
  * 
  */
 @Test
-public void test$HTTP_Method_Name$2() {
+public void test$HTTP_Method_Name$() {
   MiniClient c = new MiniClient();
   c.setConnectorEndpoint(connector.getHttpEndpoint());
   
