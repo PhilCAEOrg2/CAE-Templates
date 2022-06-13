@@ -5,7 +5,7 @@
  */
 @Test
 public void test$HTTP_Method_Name$() {
-  MiniClientCoverage c = new MiniClient(mainPath);
+  MiniClientCoverage c = new MiniClientCoverage(mainPath);
   c.setConnectorEndpoint(connector.getHttpEndpoint());
   
   $Test_Requests$
