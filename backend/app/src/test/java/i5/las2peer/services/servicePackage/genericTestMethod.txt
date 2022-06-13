@@ -1,11 +1,11 @@
 /**
  * 
- * Second Test for the $HTTP_Method_Name$ method.
+ * Test for the $HTTP_Method_Name$ method.
  * 
  */
 @Test
 public void test$HTTP_Method_Name$() {
-  MiniClient c = new MiniClient();
+  MiniClientCoverage c = new MiniClient(mainPath);
   c.setConnectorEndpoint(connector.getHttpEndpoint());
   
   $Test_Requests$
