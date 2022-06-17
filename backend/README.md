@@ -1,4 +1,7 @@
-![CAE](https://github.com/$Organization_Name$/$Repository_Name$/blob/master/img/logo.png)  
+<p align="center">
+  <img src="https://github.com/$Organization_Name$/$Repository_Name$/blob/master/img/logo.png" />
+  <img src="https://raw.githubusercontent.com/rwth-acis/las2peer/master/img/logo/bitmap/las2peer-logo-128x128.png" />
+</p>
 
 $Microservice_Name$
 ===================
