@@ -31,6 +31,10 @@ import io.swagger.annotations.License;
 import io.swagger.annotations.SwaggerDefinition;
 import org.json.simple.*;
 
+import javax.annotation.security.RolesAllowed;
+import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
+
+
 import java.util.HashMap;
 import java.util.Map;
 -{ }-
@@ -63,6 +67,7 @@ $Database_Configuration$
   @Override
   public void initResources() {
 	getResourceConfig().register(RootResource.class);
+	getResourceConfig().register(RolesAllowedDynamicFeature.class);
   }
 
   // //////////////////////////////////////////////////////////////////////////////////////
