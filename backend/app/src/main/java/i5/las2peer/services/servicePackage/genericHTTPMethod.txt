@@ -12,7 +12,6 @@ $HTTPMethod_Params$
   @Path("$HTTPMethod_Path$")
   $HTTPMethod_Produces$
   $HTTPMethod_Consumes$
-  $HTTPMethod_Roles$
   @ApiResponses(value = {
 $HTTPMethod_Api_Responses$
   })
